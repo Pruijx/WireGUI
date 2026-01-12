@@ -34,3 +34,35 @@ Download the latest `.deb` file from the **GitHub Releases** page and install it
 
 ```bash
 sudo apt install ./wiregui_1.0.0_all.deb
+```
+After installation, WireGUI will be available in your application menu.
+
+## Usage
+
+1. Launch WireGUI from the application menu
+2. Authenticate when prompted (PolicyKit password dialog)
+3. Select a WireGuard tunnel configuration
+4. Enable or disable the tunnel using the GUI
+5. WireGUI manages tunnels using wg-quick up and wg-quick down.
+
+## How It Works
+
+- WireGUI runs as a normal user application
+- When a privileged action is required, authorization is requested via PolicyKit
+- No persistent root process is used
+- No network services are exposed
+
+## Requirements
+
+The following dependencies are required and are automatically installed by the .deb package:
+wireguard-tools
+policykit-1
+python3
+python3-pyqt5
+
+## Security Model
+
+- WireGUI does not run continuously as root
+- Administrative privileges are requested only when required
+- Privilege escalation is handled through PolicyKit
+- No credentials or sensitive data are stored

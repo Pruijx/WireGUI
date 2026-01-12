@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Debian build artifacts
+pkg/
+dist/
+*.deb
+debbuild/
+projecten/
+
+# Editor
+.vscode/

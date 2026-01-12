@@ -16,6 +16,11 @@ The application uses PolicyKit (`pkexec`) to securely perform privileged operati
 - Distributed as a Debian (`.deb`) package
 
 ---
+![Main window](screenshots/main-window.png)
+![Config](screenshots/config-tunnel.png)
+![Settings](screenshots/settings.png)
+
+
 
 ## Supported platforms
 

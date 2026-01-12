@@ -16,11 +16,12 @@ The application uses PolicyKit (`pkexec`) to securely perform privileged operati
 - Distributed as a Debian (`.deb`) package
 
 ---
+
 ## IMAGES
 
-![Main window](Images/main-window.png)
-![Configuration](Images/config-tunnel.png)
-![Settings](Images/settings.png)
+<img src="Images/main-screen.png" alt="Main screen" width="500">
+<img src="Images/config-tunnel.png" alt="configuration tab for creating tunnels" width="500">
+<img src="Images/settings.png" alt="settings tab" width="500">
 
 ## Supported platforms
 
